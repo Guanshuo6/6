@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Class Results Analysis</title>  
+  <style>  
+    body {  
+      text-align: center;  
+    }  
+    .result-item {  
+      margin-bottom: 10px;  
+    }  
+  </style>  
+  <script>  
+    function analyseResults() {  
+      var results = [];  
+      var input = prompt("Enter a result (-1 to finish):");  
+      while (input !== "-1") {  
+        if (isNaN(input)) {  
+          alert("Invalid input. Please enter a valid number or -1 to finish.");  
+          return;  
+        }  
+        results.push(parseInt(input));  
+        input = prompt("Enter a result (-1 to finish):");  
+      }  
+  
+      var validResults = results.filter(function(result) {  
+        return result >= 0 && result <= 100;  
+      });  
+  
+      var passedStudents = validResults.filter(function(result) {  
+        return result >= 40;  
+      });  
+  
+      var failedStudents = validResults.filter(function(result) {  
+        return result < 40;  
+      });  
+  
+      alert("Analysis:\n" +  
+            "Total results input: " + results.length + "\n" +  
+            "Valid results: " + validResults.length + "\n" +  
+            "Students passed: " + passedStudents.length + "\n" +  
+            "Students failed: " + failedStudents.length);  
+    }  
+  </script>  
+</head>  
+<body>  
+  <h1>Class Results Analysis</h1>  
+  <button onclick="analyseResults()">Analyse Results</button>  
+</body>  
+</html>

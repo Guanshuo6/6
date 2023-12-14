@@ -1,0 +1,32 @@
+/* 默认情况下，盒子的大小为100px X 100px */  
+.box {  
+    width: 100px;  
+    height: 100px;  
+    box-sizing: border-box; /* 盒子大小包含内容、内边距和边框 */  
+    margin: 10px; /* 盒子之间的间距 */  
+    position: relative; /* 使用相对定位 */  
+}  
+  
+/* 红色盒子的边框大小为5px，颜色为红色 */  
+.red {  
+    background-color: red;  
+    border: 5px solid rgb(0, 255, 55);  
+    top: 25px; /* 从顶部移动25px */  
+    left: 30px; /* 从左侧移动30px */  
+}  
+  
+/* 蓝色盒子的边框大小为10px，颜色为蓝色 */  
+.blue {  
+    background-color: blue;  
+    border: 10px solid rgb(8, 8, 26);  
+    top: 50%; /* 从顶部移动到垂直中心位置的50%处 */  
+    left: 25%; /* 从左侧移动到水平中心位置的25%处 */  
+}  
+  
+/* 绿色盒子的边框大小为15px，颜色为绿色 */  
+.green {  
+    background-color: green;  
+    border: 15px solid rgb(128, 0, 0);  
+    top: -25px; /* 从顶部向上移动25px */  
+    right: -30px; /* 从右侧向左移动30px */  
+}

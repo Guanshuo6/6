@@ -1,0 +1,49 @@
+<!-- student Name : Feng Guansuo -->
+<!-- student ID :   C00278723 -->
+<!-- date :         08/12/2023 -->
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <link rel="stylesheet" type="text/css" href="1.css">  
+  <script src="1.js"></script>
+  <title>Personal information</title>
+</head>  
+<body>  
+  <form id="studentForm">  
+    <div class="form-group">  
+      <label for="name">Name:</label>  
+      <input type="text" id="name" name="name" required pattern="[A-Za-z\. ]+" title="Alphabetic, spaces, and dots only">  
+    </div>  
+    <div class="form-group">  
+      <label for="address">Address:</label>  
+      <input type="text" id="address" name="address" required pattern="[A-Za-z0-9\., ]+" title="Alphabetic, digits, spaces, dots, and commas only">  
+    </div>  
+    <div class="form-group">  
+      <label for="phone">Phone Number:</label>  
+      <input type="text" id="phone" name="phoneNumber" required pattern="[0-9\s\(\)\-]+" title="Numbers, spaces, ( ), and - only">  
+    </div>  
+    <div class="form-group">  
+      <label for="email">Email Address:</label>  
+      <input type="email" id="email" name="email" required>  
+    </div>  
+    <div class="form-group">  
+      <label for="confirmEmail">Confirm Email Address:</label>  
+      <input type="email" id="confirmEmail" name="confirmEmail" oninput="confirmemail(this)" required>  
+    </div>  
+    <div class="form-group">
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required oninput="checkAge(this)">
+    </div>
+    <div class="form-group">
+    <label for="startingDate">Starting Date:</label>
+    <input type="date" id="startingDate" name="startingDate" oninput="checkStartDate(this)" required>
+    </div>
+    <div>
+    <input class="my-button" type="submit"   value="Send Form">
+     
+    <input class="my-button" type="reset"    value="Clear Form">
+  </div>  
+
+  </form>  
+</body>  
+</html>

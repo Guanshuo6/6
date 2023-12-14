@@ -1,0 +1,39 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Student Grade Alert</title>  
+  <style>  
+    body {  
+      text-align: center;  
+    }  
+  </style>  
+  <script>  
+    function checkGrade() {  
+      var grade = prompt("Enter the student's grade (A, B, C, D, E):");  
+      switch(grade) {  
+        case "A":  
+          alert("Good Job!");  
+          break;  
+        case "B":  
+          alert("Pretty Good!");  
+          break;  
+        case "C":  
+          alert("Passed!");  
+          break;  
+        case "D":  
+          alert("Not so Good!");  
+          break;  
+        case "E":  
+          alert("Failed!");  
+          break;  
+        default:  
+          alert("Unknown Grade!");  
+      }  
+    }  
+  </script>  
+</head>  
+<body>  
+  <h1>Student Grade Alert</h1>  
+  <button onclick="checkGrade()">Check Grade</button>  
+</body>  
+</html>

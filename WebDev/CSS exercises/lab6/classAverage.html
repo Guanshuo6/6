@@ -1,0 +1,37 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Class Average</title>  
+  <style>  
+    body {  
+      text-align: center;  
+    }  
+  </style>  
+  <script>  
+    function calculateAverage() {  
+      var results = [];  
+      var input = prompt("Enter a result (-1 to finish):");  
+      while (input !== "-1") {  
+        if (isNaN(input)) {  
+          alert("Invalid input. Please enter a valid number or -1 to finish.");  
+          return;  
+        }  
+        results.push(parseInt(input));  
+        input = prompt("Enter a result (-1 to finish):");  
+      }  
+  
+      if (results.length === 0) {  
+        alert("No results entered.");  
+      } else {  
+        var sum = results.reduce((a, b) => a + b, 0);  
+        var average = sum / results.length;  
+        alert("Class Average: " + average);  
+      }  
+    }  
+  </script>  
+</head>  
+<body>  
+  <h1>Class Average Calculator</h1>  
+  <button onclick="calculateAverage()">Calculate Average</button>  
+</body>  
+</html>

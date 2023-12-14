@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Vowel Check</title>  
+</head>  
+<body>  
+  <h1>Is it a vowel?</h1>  
+  <button onclick="promptForCharacter()">Prompt for Character</button>  
+  <p id="result"></p>  
+  
+  <script>  
+    function isVowel(character) {  
+      var upperCaseCharacter = character.toUpperCase();  
+      if (upperCaseCharacter === 'A' || upperCaseCharacter === 'E' || upperCaseCharacter === 'I' ||  
+          upperCaseCharacter === 'O' || upperCaseCharacter === 'U') {  
+        return true;  
+      } else {  
+        return false;  
+      }  
+    }  
+  
+    function promptForCharacter() {  
+      var input = prompt("Enter a single character:");  
+      while (input.length !== 1) {  
+        input = prompt("Please enter a single character:");  
+      }  
+      var result = isVowel(input);  
+      document.getElementById("result").textContent = "Is it a vowel? " + result;  
+    }  
+  </script>  
+</body>  
+</html>

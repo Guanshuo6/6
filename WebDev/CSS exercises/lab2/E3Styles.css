@@ -1,0 +1,35 @@
+/* new 1.css */  
+  
+/* 设置导航条的样式 */  
+.navbar {  
+  display: flex;  
+  justify-content: space-between;  
+  align-items: center;  
+  background-color: pink;  
+  padding: 10px;  
+  list-style-type: none;  
+}  
+  
+/* 设置logo的样式 */  
+.logo {  
+  display: flex;  
+  justify-content: flex-start; /* 将Logo移至页面最左侧 */  
+  align-items: center; /* 使Logo与其父元素顶部对齐 */  
+  border: 10px solid red; /* 在Logo周围应用红色边框 */  
+}  
+.logo img {
+  max-height: 120px;	
+ 
+}
+  
+/* 设置导航链接的样式 */  
+.navbar li a{  
+  display: flex;  
+  align-items: center;  
+  margin-left: 10px;  /* 单独设置元素在左侧右侧顶部底部 */
+  color: white; /* 默认文字颜色 */  
+  text-decoration: none;  
+ 
+}  
+  
+  

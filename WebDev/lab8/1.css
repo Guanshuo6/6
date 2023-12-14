@@ -1,0 +1,50 @@
+body {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  height: 100vh;  
+  margin: 0;  
+  background-color: #8a8a89b9;  /* 你可以更改为你喜欢的背景颜色 */  
+}  
+  
+form {  
+  border: 2px solid #d1cece;  /* 你可以更改为你喜欢的边框颜色 */  
+  padding: 20px;  
+  width: 30%;
+  background-color: #fff;  /* 你可以更改为你喜欢的背景颜色 */  
+}  
+
+input {
+  width: 94%; /* Make input fields take the full width of the container */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+}
+  
+form label {  
+  display: block;
+  margin-top: 10PX;  
+}
+input[required] {  
+  border: 1px solid red;  
+}  
+  
+input[required]:invalid {  
+  border-color: red;  
+}
+input[required]:valid {  
+  border-color: green;  
+}
+
+input[type=submit], input[type=button],input[type=reset] {  
+  width: 100%;  
+  background-color: #f9faf9;  
+  color: rgba(17, 15, 15, 0.897);  
+  padding: 12px 20px;  /*上下  左右边距*/
+  margin: 8px 0;   
+  cursor: pointer; /*Mouse over shape 鼠标悬停形状*/ 
+}
+

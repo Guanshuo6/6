@@ -1,0 +1,26 @@
+/*Name:          Guanshuo Feng
+   Student name:  C00278723
+   Date:          05/10/2023
+   Purpose:       exercise2*/
+
+
+.navbar 
+{  
+  display: flex; /* 使用Flex布局 */  
+  justify-content: flex-end; /* 元素水平对齐方式：右对齐 */  
+  align-items: center; /* 元素垂直对齐方式：居中 */  
+  background-color: #333; /* 导航条背景颜色 */  
+  color: #fff; /* 导航条文字颜色 */  
+  padding: 10px; /* 导航条内边距 */ 
+  list-style-type: none;
+  gap: 10px;
+}  
+
+a
+{
+	text-decoration: none;
+	color: white;
+}  
+
+
+

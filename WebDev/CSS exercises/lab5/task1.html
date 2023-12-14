@@ -1,0 +1,42 @@
+<!-- student Name : Feng Guansuo -->
+<!-- student ID :   C00278723 -->
+<!-- date :         13/10/2023 -->
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <link rel="stylesheet" type="text/css" href="task1.css"> 
+    <title>Enter customer information</title>
+</head>  
+<body>  
+    <form >
+
+     <fieldset>
+    
+     <legend>Customer information</legend>
+     <legend for="Customer id">Customer id:</legend>
+     <input type="text" id="Customer id" required placeholder="Please enter Customer id" title= "A capital letter with six number eg:A00000" pattern="[A-Z][0-9]{6}"><br>
+     <legend>Name:</legend>
+     <input type="text" id="Name"        required placeholder="Please enter Name" title = "please enter the Name"><br>
+     <legend>Address:</legend>
+     <input type="text" id="Address"     required placeholder="Please enter Address" title = "please enter the Address"><br>
+     <legend>Eircode:</legend>
+     <input type="text" id="Eircode"      placeholder="Please enter Eircode" title = "Seven capital letter or numbers without'O' eg:Q1EU777 " pattern="[0-9A-NP-Z]{7}"><br>
+     <legend>PPS number:</legend>
+     <input type="text" id="PPS number"   required placeholder="Please enter PPS number" title = "Seven numbers with one or two capital letter eg:1111111A"pattern="[0-9]{7}[A-Z]{1,2}"><br>
+     <legend>Email address:</legend>
+     <input type="email" id="Email address"   required placeholder="Please enter Email address" title = "please enter valid email address"><br><br>
+     <label for="dob">Date of Birth:</label><br>
+     <input type="date" id="dob" name="dob"   placeholder="Birth" title="Please enter your birth"><br><br>
+     <legend>Phone number:</legend>  
+     <input type="text" id="Phone number"     placeholder="Please enter Phone number" title = "please enter the Phone number,you can use ()  + - " pattern="[0-9 \(\)+\-]+"><br>
+    
+    </fieldset>
+
+     <input class="my-button" type="submit"   value="Send Form">
+     
+     <input class="my-button" type="reset"    value="Clear Form">
+
+     </form>
+        
+     </body> 
+     </html> 

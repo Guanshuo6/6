@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Max of Three Numbers</title>  
+</head>  
+<body>  
+  <h1>Max of Three Numbers</h1>  
+  <button onclick="promptForNumbers()">Prompt for Numbers</button>  
+  <p id="result"></p>  
+  
+  <script>  
+    function myMaxOfThree(num1, num2, num3) {  
+      if (num1 >= num2 && num1 >= num3) {  
+        return num1;  
+      } else if (num2 >= num1 && num2 >= num3) {  
+        return num2;  
+      } else {  
+        return num3;  
+      }  
+    }  
+  
+    function promptForNumbers() {  
+      var num1 = prompt("Enter the first number:");  
+      var num2 = prompt("Enter the second number:");  
+      var num3 = prompt("Enter the third number:");  
+      var max = myMaxOfThree(num1, num2, num3);  
+      document.getElementById("result").textContent = "The largest number is: " + max;  
+    }  
+  </script>  
+</body>  
+</html>

@@ -1,0 +1,74 @@
+/*student Name : Feng Guansuo */
+/* student ID :   C00278723 */
+/*date :         13/10/2023*/
+body {  
+    /* 设置页面主体部分的字体为Arial，如果用户的计算机上没有Arial，则使用默认的无衬线字体 */  
+    font-family: Arial, sans-serif;  
+}  
+  
+form {  
+    /* 设置表单的宽度为500像素，并且在页面中居中显示 */  
+    width: 500px;  
+    margin: auto;  
+}  
+  
+fieldset {  
+    /* 设置表单分组的边框为1像素，并且填充为20像素 */  
+    border: 1px solid #ccc;  
+    padding: 20px;  
+    /* 设置表单分组的底部外边距为20像素 */  
+    margin-bottom: 20px;  
+}  
+  
+legend {  
+    /* 设置表单分组的标题的字体为粗体，并且颜色为深灰色 */  
+    font-weight: bold;  
+    color: #333;  
+    /* 设置表单分组的标题的下边距为5像素，上不填充 */  
+    padding: 5px 0;  
+}  
+  
+label {  
+    /* 设置表单标签的显示方式为块级元素，并且字体为粗体 */  
+    display: block;  
+    font-weight: bold;  
+    /* 设置表单标签的底部外边距为5像素 */  
+    margin-bottom: 5px;  
+}  
+  
+input[type="text"], input[type="url"], input[type="email"] {  
+    /* 设置文本输入框、URL输入框、电子邮件输入框的宽度为100%，并且内边距为10像素 */  
+    width: 100%;  
+    padding: 10px;  
+    /* 设置文本输入框、URL输入框、电子邮件输入框的边框为1像素，并且颜色为浅灰色 */  
+    border: 1px solid #ccc;  
+    /* 设置文本输入框、URL输入框、电子邮件输入框的边框圆角为5像素 */  
+    border-radius: 5px;  
+}  
+  
+input[type="tel"] {  
+    /* 设置电话号码输入框的宽度为100%，并且内边距为10像素 */  
+    width: 100%;  
+    padding: 10px;  
+}  
+  
+input[type="date"] {  
+    /* 设置日期选择框的宽度为100%，无内边距 */  
+    width: 100%;  
+    padding: 10px;  
+}
+ 
+.radio-buttons{
+    display: flex;/*调整按钮位置*/
+    margin: 0;
+}
+.radio-buttons label{
+    margin-right: 20px;/* 加入按钮间隔*/
+}
+  
+.my-button { 
+    display: block; 
+    margin-bottom: 15px; /* 可选：添加外边距以便更好地对齐按钮 */ 
+    min-width: 100px; 
+    
+  }

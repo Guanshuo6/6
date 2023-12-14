@@ -1,0 +1,31 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Sort Array</title>  
+  <script>  
+    // 定义一个函数来对数组进行排序  
+    function sortArray() {  
+      // 获取用户输入的数组  
+      var words = document.getElementById("inputArray").value;  
+      // 将输入的字符串拆分为数组  
+      words = words.split(",");  
+        
+      // 使用sort函数对数组进行排序  
+      words.sort();  
+        
+      // 将排序后的数组显示在网页上  
+      document.getElementById("sortedArray").textContent = words.join(", ");  
+    }  
+  </script>  
+</head>  
+<body>  
+  <h1>Array Before Sorting:</h1>  
+  <p>请输入要排序的数组（用逗号分隔）：</p>  
+  <input type="text" id="inputArray">  
+  <button onclick="sortArray()">Sort Array</button>  
+  <p id="before"></p>  
+    
+  <h1>Array After Sorting:</h1>  
+  <p id="sortedArray"></p>  
+</body>  
+</html>

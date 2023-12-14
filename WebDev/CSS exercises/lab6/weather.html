@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+  <title>Temperature Alert</title>  
+  <script>  
+    function checkTemperature() {  
+      var temp = parseInt(prompt("Enter the temperature:"));  
+      if (temp > 30) {  
+        alert("Very Hot!");  
+      } else if (temp >= 22 && temp <= 29) {  
+        alert("T-shirt and shorts weather");  
+      } else if (temp >= 18 && temp <= 21) {  
+        alert("Around room temperature");  
+      } else if (temp >= 14 && temp <= 17) {  
+        alert("Long sleeve shirt and trousers");  
+      } else if (temp >= 8 && temp <= 13) {  
+        alert("Fleece jacket weather");  
+      } else if (temp >= 2 && temp <= 7) {  
+        alert("Quite cold");  
+      } else if (temp >= -10 && temp <= 1) {  
+        alert("Very Very cold");  
+      } else {  
+        alert("Don't go out unless you really need to!!");  
+      }  
+    }  
+  </script>  
+</head>  
+<body>  
+  <h1>Temperature Alert</h1>  
+  <button onclick="checkTemperature()">Check Temperature</button>  
+</body>  
+</html>
