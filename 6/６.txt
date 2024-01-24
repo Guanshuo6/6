@@ -1,0 +1,58 @@
+ORG 100h  
+  
+; 定义数据  
+DCB 01h, 02h, 03h, 04h, 05h  
+  
+; MOVE.L 示例  
+MOVE.L #10, D0  
+MOVE.L #20, D1  
+MOVE.L D0, D2  
+  
+; MOVE.B 示例  
+MOVE.B #5, D3  
+MOVE.B #10, D4  
+MOVE.B D3, D5  
+  
+; MOVE.W 示例  
+MOVE.W #0xA, D6  
+MOVE.W #0xB, D7  
+MOVE.W D6, D8  
+  
+; Moving data to memory 示例  
+STR D1, [DPtr0] ; Store D1 in memory at address DPtr0  
+STR D2, [DPtr1] ; Store D2 in memory at address DPtr1  
+STR D3, [DPtr2] ; Store D3 in memory at address DPtr2  
+STR D4, [DPtr3] ; Store D4 in memory at address DPtr3  
+STR D5, [DPtr4] ; Store D5 in memory at address DPtr4  
+STR D6, [DPtr5] ; Store D6 in memory at address DPtr5  
+STR D7, [DPtr6] ; Store D7 in memory at address DPtr6  
+STR D8, [DPtr7] ; Store D8 in memory at address DPtr7  
+  
+; Moving data from memory to data registers 示例  
+LDR D9, [DPtr8] ; Load D9 with the value at address DPtr8  
+LDR D10, [DPtr9] ; Load D10 with the value at address DPtr9  
+LDR D11, [DPtr10] ; Load D11 with the value at address DPtr10  
+LDR D12, [DPtr11] ; Load D12 with the value at address DPtr11  
+LDR D13, [DPtr12] ; Load D13 with the value at address DPtr12  
+LDR D14, [DPtr13] ; Load D14 with the value at address DPtr13  
+LDR D15, [DPtr14] ; Load D15 with the value at address DPtr14  
+LDR D16, [DPtr15] ; Load D16 with the value at address DPtr15  
+  
+HALT ; Stop the program  
+  
+DPtr0 = $2000 ; Define memory addresses for storing data to memory  
+DPtr1 = $2002  
+DPtr2 = $2004  
+DPtr3 = $2006  
+DPtr4 = $2008  
+DPtr5 = $200A  
+DPtr6 = $200C  
+DPtr7 = $200E  
+DPtr8 = $2010  
+DPtr9 = $2012  
+DPtr10 = $2014  
+DPtr11 = $2016  
+DPtr12 = $2018  
+DPtr13 = $201A  
+DPtr14 = $201C  
+DPtr15 = $201E
