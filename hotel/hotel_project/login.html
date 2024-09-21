@@ -1,0 +1,48 @@
+<!-- 
+     Project        : Hotel webpage
+     Page Name      : Login page
+     Student ID 1   : C00280203 (Zihan Wang)
+     Student ID 2   : C00282942 (Edward Zheng)
+     Student ID 3   : C00288344 (Filip Melka)
+     Student ID 4   : C00278723 (Guanshuo Feng)
+     Date Create    : 08/02/2024
+     Date Update    : 09/02/2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Log In</title>
+		<!-- Logo for tag -->
+		<link rel="icon" type="image/x-icon" href="images/LOGO-no-bg.png">
+		<link rel="stylesheet" href="styles/login.css" />
+	</head>
+	<body>
+		<main>
+			<div>
+				<!-- Link to login.php -->
+				<!-- Script listen the event -->
+				<form action="php/login.php" method="POST">
+					<p>Log In</p>
+					<div class="input">
+						<img src="images/user.png" alt="User icon" />
+						<input type="text" name="username" id="username" required/>
+					</div>
+					<div class="input">
+						<img src="images/padlock.png" alt="User icon" />
+						<input type="password" name="password" id="password" required/>
+					</div>
+					<button type="submit" class="btn-primary">Log In</button>
+					<p id="error-msg" class="hidden">Wrong username or password</p>
+				</form>
+			</div>
+			<div>
+				<img class="logo" src="images/LOGO-no-bg.png" alt="" />
+			</div>
+		</main>
+		
+		<script src="JavaScript/login.js"></script>
+	</body>
+</html>

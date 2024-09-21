@@ -1,0 +1,18 @@
+/* 
+    Screen:         Delete staff member
+    Purpose:        Deleting a staff member 
+    Student ID:     C00288344
+    Student Name:   Filip Melka
+    Date:           April 2024
+*/
+
+select {
+	margin: auto;
+	margin-bottom: 20px;
+	display: block;
+	font-size: 17px;
+}
+.btn-delete {
+	background: red;
+	border-color: red;
+}

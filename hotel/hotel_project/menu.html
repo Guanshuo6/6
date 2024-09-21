@@ -1,0 +1,82 @@
+<!-- 
+     Project        : Hotel webpage
+     Page Name      : Main Menu
+     Student ID 1   : C00280203 (Zihan Wang)
+     Student ID 2   : C00282942 (Edward Zheng)
+     Student ID 3   : C00288344 (Filip Melka)
+     Student ID 4   : C00278723 (Guanshuo Feng)
+     Date Create    : 08/02/2024
+     Date Update    : 09/02/2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Main Menu</title>
+		<!-- Link to css -->
+		<link rel="icon" type="image/x-icon" href="images/LOGO-no-bg.png">
+		<link rel="stylesheet" href="styles/menu.css" />
+	</head>
+	<body>
+		<nav>
+			<!-- Insert icons -->
+			<img class="logo" src="images/LOGO-no-bg.png" alt="Logo" />
+			<button class="btn-primary" title="Return to login page" onclick="signOut()">Sign Out</button>
+		</nav>
+		<script>
+			function signOut() { 
+				location.href = "./php/signOut.php"
+			}
+		</script>
+		<main>
+			<div class="container">
+				<a href="check-in.html.php">
+					<img src="images/check.png" alt="Icon" />
+					<div class="text">
+						<p>Check in/ Check out</p>
+						<p>Manage guests stay</p>
+					</div>
+				</a>
+				<a href="stock-report.html.php">
+					<img src="images/stock.png" alt="Icon" />
+					<div class="text">
+						<p>Manage Stock</p>
+						<p>View, remove, and reorder stock</p>
+					</div>
+				</a>
+				<a href="extras.html.php">
+					<img src="images/extra.png" alt="Icon" />
+					<div class="text">
+						<p>Extras Orders</p>
+						<p>Manage extras</p>
+					</div>
+				</a>
+				<a href="room-report.html.php">
+					<img src="images/room.png" alt="Icon" />
+					<div class="text">
+						<p>Manage Rooms</p>
+						<p>View and manage available rooms</p>
+					</div>
+				</a>
+				<a href="./Filip/staff-maintenance-menu.html.php">
+					<img src="images/staff.png" alt="Icon" />
+					<div class="text">
+						<p>Staff Maintenance Menu</p>
+						<p>Add, view, and ammend staff members</p>
+					</div>
+				</a>
+				<a href="./Filip/reports-menu.html.php">
+					<img src="images/profit-report.png" alt="Icon" />
+					<div class="text">
+						<p>Reports Menu</p>
+						<p>View reports</p>
+					</div>
+				</a>
+			</div>
+			<!-- Link to JavaScript -->
+			<script src="JavaScript/menu.js"></script>
+		</main>
+	</body>
+</html>

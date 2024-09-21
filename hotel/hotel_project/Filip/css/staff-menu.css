@@ -1,0 +1,66 @@
+/* 
+    Screen:         Staff Maintenance Menu
+    Purpose:        Menu for staff-related tasks
+    Student ID:     C00288344
+    Student Name:   Filip Melka
+    Date:           April 2024
+*/
+
+:root {
+	/* option colors */
+	--add: #d0f7d4;
+	--delete: #ffdcdc;
+	--view: #dee5ff;
+	--exit: #f4caa4;
+}
+
+h2 {
+	text-align: center;
+	opacity: 0.8;
+	margin-top: 50px;
+}
+
+#menu {
+	margin: 50px auto;
+	max-width: 900px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* two columns of the same width */
+	gap: 50px;
+}
+p {
+	margin: 0;
+}
+a {
+	text-decoration: none; /* remove underline */
+	color: var(--text);
+}
+.card {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	border-radius: 10px;
+	gap: 30px;
+	transition: background 200ms ease-out;
+}
+.menu-icon {
+	width: 60px;
+	height: 60px;
+	border-radius: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 25px;
+}
+.menu-content {
+	display: flex;
+	flex-direction: column;
+}
+.card p:first-of-type {
+	font-weight: bold;
+	font-size: 20px;
+}
+.card p:last-of-type {
+	font-size: 16px;
+	margin-top: 10px;
+	opacity: 0.6;
+}

@@ -1,0 +1,78 @@
+/*
+ * Project        : Hotel webpage
+ * Page Name      : Manage Page
+ * Student ID 1   : C00280203 (Zihan Wang)
+ * Student ID 2   : C00282942 (Edward Zheng)
+ * Student ID 3   : C00288344 (Filip Melka)
+ * Student ID 4   : C00278723 (Guanshuo Feng)
+ * Date Create    : 04/03/2024
+ * Date Update    : 04/03/2024
+ */
+
+body { background-color: rgb(238, 238, 238); }
+
+input
+{
+	width: 320px;
+}
+
+select
+{
+	width: 325px;
+}
+
+input, select
+{
+    height: 32px;
+    border-radius: 5px;
+    margin-left: 15px;
+	border: 0;
+}
+
+.add, .manage, .edit
+{
+    background-color: rgb(250, 250, 250);
+    width: 666px;
+    height: 438px;
+    border-radius: 5.55%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.add-text, .manage-text, .edit-text
+{ 
+    text-align: right; 
+    margin-right: 130px;
+	margin-top: 15px;
+}
+
+.add-button, .manage-button, .edit-button { text-align: center; }
+
+.add-button, .edit-button { margin-top: 30px; }
+
+.manage-text { margin-top: 10px; }
+
+.manage-button { margin-top: 15px; }
+
+h2 { text-align: center; }
+
+#reset { margin-left: 100px; }
+
+#reset, #submit
+{
+    background-color: rgb(12, 34, 56);
+    color: rgb(250, 250, 250);
+    border: 0;
+    border-radius: 5px;
+    width: 66px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#reset:hover, #submit:hover 
+{ 
+	color: rgb(12, 34, 56);
+	background-color: rgb(222, 222, 222);
+	transition: all 0.888s;
+}

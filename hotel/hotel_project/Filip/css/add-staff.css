@@ -1,0 +1,28 @@
+/* 
+    Screen:         Add staff member
+    Purpose:        Adding a new staff member 
+    Student ID:     C00288344
+    Student Name:   Filip Melka
+    Date:           April 2024
+*/
+
+.radio,
+.username {
+	padding: 10px 40px;
+}
+
+.radio {
+	margin: 15px 0;
+}
+.radio span {
+	opacity: 0.8;
+}
+
+.username {
+	display: flex;
+	flex-direction: column;
+	width: fit-content; /* width is adjusted to fit the content*/
+}
+.username p {
+	background: blue;
+}

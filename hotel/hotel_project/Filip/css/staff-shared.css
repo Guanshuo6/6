@@ -1,0 +1,166 @@
+/* 
+    Screen:         Staff Menu, Add / Delete / Amend Staff Member
+    Purpose:        Staff-related tasks
+    Student ID:     C00288344
+    Student Name:   Filip Melka
+    Date:           April 2024
+*/
+
+:root {
+	/* color variables */
+	--text: black;
+	--bg: rgb(246, 246, 246);
+	--primary: #123456;
+}
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background: var(--bg);
+	color: var(--text);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	padding: 10px 12vw;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav img {
+	height: 70px;
+}
+
+a {
+	color: var(--text);
+	text-decoration: none; /* remove underline */
+}
+button {
+	background: transparent;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.modal {
+	background: white;
+	margin: 50px auto;
+	width: fit-content; /* width is adjusted to fit the content */
+	padding: 30px;
+	border-radius: 10px;
+}
+.success,
+.error-occured {
+	text-align: center;
+}
+.success p {
+	font-size: 20px;
+}
+.success span {
+	font-size: 22px;
+	font-weight: bold;
+}
+.success p:last-of-type,
+.error-occured p:last-of-type {
+	margin-bottom: 50px;
+	font-size: 18px;
+}
+.error-occured p:first-of-type {
+	font-size: 20px;
+	font-weight: bold;
+}
+.error-occured p:last-of-type {
+	opacity: 0.7;
+}
+.inputs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* two columns of the same width */
+	align-items: center;
+	gap: 10px;
+	padding: 30px 10px;
+}
+.form-title {
+	text-align: center;
+	font-size: 18px;
+}
+.form-title h2 {
+	font-size: 20px;
+}
+.form-inputs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* two columns of the same width */
+	gap: 30px;
+	padding: 10px 40px;
+}
+.form-inputs div {
+	display: flex;
+	flex-direction: column;
+}
+label {
+	opacity: 0.8;
+	font-size: 14px;
+}
+input {
+	font-size: 16px;
+	padding: 5px;
+}
+.error {
+	text-align: center;
+	color: rgb(213, 14, 14);
+	user-select: none;
+}
+.btns {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 30px;
+	margin-top: 20px;
+}
+.btn-primary {
+	background: var(--primary);
+	padding: 5px 10px;
+	border: 1px solid var(--primary);
+	color: white;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.protected-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 40px;
+}
+.protected-title > div {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+.protected-title > span {
+	opacity: 0.7;
+	font-size: 15px;
+}
+.btns {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 30px;
+	margin-top: 20px;
+}
+.btn-primary {
+	background: var(--primary);
+	padding: 5px 10px;
+	border: 1px solid var(--primary);
+	color: white;
+	font-size: 16px;
+	border-radius: 5px;
+}
+.btn-secondary {
+	background: transparent;
+	padding: 5px 10px;
+	border: 1px solid var(--primary);
+	color: var(--primary);
+	font-size: 16px;
+	border-radius: 5px;
+}

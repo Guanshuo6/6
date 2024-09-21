@@ -1,0 +1,61 @@
+/*
+ * Project        : Hotel webpage
+ * Page Name      : Decalre for all styles
+ * Student ID 1   : C00280203 (Zihan Wang)
+ * Student ID 2   : C00282942 (Edward Zheng)
+ * Student ID 3   : C00288344 (Filip Melka)
+ * Student ID 4   : C00278723 (Guanshuo Feng)
+ * Date Create    : 08/02/2024
+ * Date Update    : 09/02/2024
+ */
+
+:root {
+	--primary: rgb(12, 34, 56); /* dark blue */
+	--bg: rgb(246, 246, 246);
+	--text: rgb(61, 61, 61);
+	--nav-height: 80px; /* navbar height */
+}
+
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+nav {
+	height: var(--nav-height);
+	padding-inline: 15%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	height: 60px;
+}
+
+main {
+	min-height: calc(
+		100vh - var(--nav-height)
+	); /* the minimum height of main is full screen height minus the height of the navbar */
+}
+
+button {
+	cursor: pointer;
+}
+
+/* components */
+.btn-primary {
+	border: none;
+	background: var(--primary);
+	padding: 6px 12px;
+	border-radius: 3px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+}
