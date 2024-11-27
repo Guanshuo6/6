@@ -1,0 +1,7 @@
+Hello Paul, You can see the game's logical rule code and link code in logic.ipynb and other parts of the code also have complete remarks, 
+my design is that first the player has to enter the name, and then the system randomly assigns a word with a number of letters greater than
+ eight according to wordhuge, the player randomly arranges and combines words according to the letters of the word, players can write up to five,
+ the time is within 30 seconds, the system will judge whether the player enters the word letter is more than 6, greater than 6 will get 10 points, 
+less than 6 can get 5 points, if player want to end ,type exit in advance, and finally the system will provide leaderboard aggregation information
+And then out of addition to the rule code, I also put the complete code that can be interacted with in jupyternote, 
+Paul can experience it, thank you for reading!

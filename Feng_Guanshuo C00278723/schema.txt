@@ -1,0 +1,13 @@
+CREATE DATABASE WordGameDB;
+
+CREATE TABLE WordGameDB.Leaderboard (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player_name VARCHAR(50) NOT NULL,
+    score INT NOT NULL,
+    play_time TIME NOT NULL,
+    game_date DATE NOT NULL
+);
+
+CREATE USER 'wordgame_user'@'localhost' IDENTIFIED BY 'securepassword';
+GRANT ALL PRIVILEGES ON WordGameDB.* TO 'wordgame_user'@'localhost';
+FLUSH PRIVILEGES;
